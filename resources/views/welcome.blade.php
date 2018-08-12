@@ -7,9 +7,9 @@
         <div class="row justify-content-center mb20">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">RSVP</div>
+                    <div class="card-header">Wedding RSVP (October 28th, 2018)</div>
                     <div class="card-body">
-                        FORM HERE
+                        @include('elements.rsvp')
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="card">
                     <div class="card-header">Registry</div>
                     <div class="card-body">
-                        Registry Here
+                        Nick and Mandi are not currently registered. The registry information will be here once they are registered.
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="card">
                     <div class="card-header">Photo Gallery</div>
                     <div class="card-body">
-                        Photo Gallery
+                        Wedding Photo Gallery coming soon.
                     </div>
                 </div>
             </div>

@@ -15,4 +15,7 @@ Route::get('/', 'PagesController@welcome')->name('home');
 
 Route::get('/account', 'UsersController@index')->name('account');
 
+// RSVP
+Route::post('/rsvp', 'RsvpsController@store')->name('rsvp');
+
 Auth::routes();
