@@ -32,6 +32,7 @@ class RsvpMail extends Mailable
     {
         return $this->from(config('mail.from.address'))
                     ->replyTo($this->data['email'])
+                    ->subject('RSVP from ' . $this->data['name'])
                     ->markdown('emails.rsvp')
                     ->with([
                         'name' => $this->data['name'],
