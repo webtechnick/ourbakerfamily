@@ -80,6 +80,7 @@
         </nav>
 
         <main class="py-4">
+            @include('glow::elements.flash')
             @yield('content')
         </main>
     </div>

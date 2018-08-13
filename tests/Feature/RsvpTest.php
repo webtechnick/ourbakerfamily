@@ -22,8 +22,9 @@ class RsvpTest extends TestCase
         $data = [
             'name' => 'Nick',
             'email' => 'email@example.com',
-            'plusone' => 'on',
+            'count' => '0',
             'message' => 'Test message',
+            'accept' => 'Dreafully Decline',
         ];
 
         $this->post('/rsvp', $data);

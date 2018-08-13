@@ -24,13 +24,10 @@ class RsvpRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => [
-                'required',
-            ],
-            'email' => [
-                'required',
-                'email',
-            ]
+            'name' => ['required'],
+            'email' => ['required','email'],
+            'count' => ['required'],
+            'accept' => ['required'],
         ];
     }
 }

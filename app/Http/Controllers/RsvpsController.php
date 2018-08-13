@@ -11,10 +11,11 @@ class RsvpsController extends Controller
 {
     public function store(RsvpRequest $request)
     {
-        // Store the RSVP ?
-
         // Send email to admin.
-        Mail::to('rsvp@ourbaker.family')->send(new RsvpMail($request->all()));
+        Mail::to('rsvp@ourbaker.family')
+            ->send(new RsvpMail($request->all()));
+
+        $this->goodFlash('Thank you for RSVPing!');
 
         return redirect()->route('home');
     }

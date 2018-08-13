@@ -30,6 +30,46 @@
     </div>
 
     <div class="form-group row">
+        <label for="accept" class="col-sm-4 col-form-label text-md-right">{{ __('Response') }}</label>
+
+        <div class="col-md-6">
+            <select class="form-control{{ $errors->has('accept') ? ' is-invalid' : '' }}" name="accept">
+                <option value="Dying to be there">Dying to be there! (Yes)</option>
+                <option value="Dreadfully Decline">Dreadfully decline (No)</option>
+            </select>
+
+            @if ($errors->has('accept'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('accept') }}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="count" class="col-sm-4 col-form-label text-md-right">{{ __('Souls Attending') }}</label>
+
+        <div class="col-md-6">
+            <select class="form-control{{ $errors->has('count') ? ' is-invalid' : '' }}" name="count">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="other">other (please specify in message)</option>
+            </select>
+
+            @if ($errors->has('count'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('count') }}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
+
+    <div class="form-group row">
         <label for="message" class="col-sm-4 col-form-label text-md-right">{{ __('Message (optional)') }}</label>
 
         <div class="col-md-6">
@@ -40,18 +80,6 @@
                     <strong>{{ $errors->first('message') }}</strong>
                 </span>
             @endif
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <div class="col-md-6 offset-md-4">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="plusone" id="plusone" {{ old('plusone') ? 'checked' : '' }}>
-
-                <label class="form-check-label" for="plusone">
-                    {{ __('+1 (You and a guest)') }}
-                </label>
-            </div>
         </div>
     </div>
 

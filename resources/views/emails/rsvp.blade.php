@@ -2,14 +2,12 @@
 # New RSVP from {{ $name }}
 
 @component('mail::table')
-| Name | Email |
-|------|------:|
-| {{ $name }} | {{ $email }} |
+| Answer | Souls |
+|:-------|------:|
+| {{ $accept }} | {{ $count }} |
 @endcomponent
 
 {{ $message }}
-
-Plus one? {{ $plusone ? 'Yes' : 'No'}}
 
 Your friendly bot,<br>
 OurBakerFamily

@@ -30,13 +30,15 @@ class RsvpMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.rsvp')
-               ->from($this->data['email'])
-               ->with([
-                    'name' => $this->data['name'],
-                    'email' => $this->data['email'],
-                    'plusone' => $this->data['plusone'],
-                    'message' => $this->data['message']
-               ]);
+        return $this->from(config('mail.from.address'))
+                    ->replyTo($this->data['email'])
+                    ->markdown('emails.rsvp')
+                    ->with([
+                        'name' => $this->data['name'],
+                        'email' => $this->data['email'],
+                        'count' => $this->data['count'],
+                        'accept' => $this->data['accept'],
+                        'message' => $this->data['message']
+                    ]);
     }
 }
