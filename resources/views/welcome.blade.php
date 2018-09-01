@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <a name="galley"></a>
+        <a name="gallery"></a>
         <div class="row justify-content-center mb20">
             <div class="col-md-8">
                 <div class="card">
