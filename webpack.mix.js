@@ -11,5 +11,21 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.copy('node_modules/animate.css/animate.min.css', 'public/css/libs/animate');
+
+mix.copy('node_modules/dropzone/dist', 'public/css/libs/dropzone');
+
+mix.copy('node_modules/lightbox2/dist/css', 'public/css/libs/lightbox2');
+mix.copy('node_modules/lightbox2/dist/images', 'public/images');
+
+mix.styles([
+        'public/css/libs/animate/animate.min.css',
+        'public/css/libs/lightbox2/lightbox.min.css',
+        'public/css/libs/dropzone/min/dropzone.min.css',
+        // 'libs/fontawesome/css/all.css',
+     ], 'public/css/libs.css');
+
+mix.js('resources/assets/js/app.js', 'public/js').version();
+mix.sass('resources/assets/sass/app.scss', 'public/css').version();
+
+// mix.version(['js/app.js','css/app.css']);

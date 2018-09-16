@@ -85,8 +85,8 @@
 
     <div class="form-group row mb-0">
         <div class="col-md-8 offset-md-4">
-            <button type="submit" class="btn btn-primary">
-                {{ __('Send RSVP') }}
+            <button type="submit" class="btn btn-primary btn-lg float-right">
+                {{ __('Send RSVP') }} <i class="fas fa-paper-plane"></i>
             </button>
         </div>
     </div>

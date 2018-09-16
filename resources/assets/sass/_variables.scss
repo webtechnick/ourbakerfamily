@@ -1,20 +1,40 @@
 
 // Body
-$body-bg: #f8fafc;
+$body-bg: #212121;
+$body-color: #fff;
+
+// Card
+$card-bg: #666666;
+$card-cap-bg: #1D1D1D;
+$card-border-color: $card-cap-bg;
 
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
+$theme-colors: (
+    "primary": #AB2516,
+    "secondary": #AB2516
+);
+
 // Colors
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
 $pink: #f66D9b;
-$red: #e3342f;
+$red: #AB2516;
 $orange: #f6993f;
 $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$primary:       #AB2516;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
