@@ -26,7 +26,7 @@
                         <div class="list-group">
                             <a href="https://paypal.me/WebTechNick" class="list-group-item list-group-item-action" target="_blank">Disney World Wishing Well</a>
                             <a href="https://www.amazon.com/wedding/share/tildeathdouspart" class="list-group-item list-group-item-action" target="_blank">Amazon Registry</a>
-                            <a href="https://www.bedbathandbeyond.com/store/gift-registry-search?_requestid=736396#searchKeywordByName=546421921" class="list-group-item list-group-item-action" target="_blank">Bed Bath & Beyond</a>
+                            <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=546421921&pwsurl=&searchParam=546421921" class="list-group-item list-group-item-action" target="_blank">Bed Bath & Beyond</a>
                         </div>
                     </div>
                 </div>
