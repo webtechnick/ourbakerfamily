@@ -17,5 +17,7 @@ Route::get('/account', 'UsersController@index')->name('account');
 
 // RSVP
 Route::post('/rsvp', 'RsvpsController@store')->name('rsvp');
+// Gallery
+Route::post('/photos/store', 'PhotosController@store')->name('photos.store');
 
 Auth::routes();

@@ -22,8 +22,11 @@
     "dependencies": {
         "animate.css": "^3.7.0",
         "collect.js": "^4.0.27",
+        "css-loader": "^1.0.0",
         "dropzone": "^5.5.1",
         "lightbox2": "^2.10.0",
-        "sweetalert": "^2.1.0"
+        "sweetalert": "^2.1.0",
+        "vue-loader": "^14.2.2",
+        "vue-template-compiler": "^2.5.17"
     }
 }

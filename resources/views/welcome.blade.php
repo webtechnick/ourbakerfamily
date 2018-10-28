@@ -4,15 +4,8 @@
     <div class="container">
 
         <div class="row justify-content-center mb20">
-            <a name="rsvp"></a>
-            <div class="col-md-6">
-                <div class="card" id="RSVP">
-                    <div class="card-header">Wedding RSVP (October 28th, 2018)</div>
-                    <div class="card-body">
-                        @include('elements.rsvp')
-                    </div>
-                </div>
-            </div>
+            {{-- @include('elements.rsvp') --}}
+            @include('elements.gallery')
 
             <a name="registry"></a>
             <div class="col-md-6">
@@ -28,18 +21,6 @@
                             <a href="https://www.amazon.com/wedding/share/tildeathdouspart" class="list-group-item list-group-item-action" target="_blank">Amazon Registry</a>
                             <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=546421921&pwsurl=&searchParam=546421921" class="list-group-item list-group-item-action" target="_blank">Bed Bath & Beyond</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a name="gallery"></a>
-        <div class="row justify-content-center mb20">
-            <div class="col-md-12">
-                <div class="card" id="Gallery">
-                    <div class="card-header">Photo Gallery</div>
-                    <div class="card-body">
-                        Wedding Photo Gallery coming soon.
                     </div>
                 </div>
             </div>
