@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Events\PhotoDeleting;
 use App\Traits\Models\Thumbnailable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
@@ -15,6 +16,10 @@ class Photo extends Model
         'description',
         'is_active',
         'is_featured',
+    ];
+
+    protected $dispatchesEvents = [
+        'deleting' => PhotoDeleting::class,
     ];
 
     /**

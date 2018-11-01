@@ -19,6 +19,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/#registry" onclick="$('#Registry').animateCss('rubberBand')">Gift Registry</a>
                 </li>
+                @if (Auth::check() && Auth::user()->isAdmin())
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin">Admin</a>
+                    </li>
+                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->
