@@ -10,7 +10,7 @@ class AdminPhotosController extends Controller
 {
     public function index()
     {
-        $photos = Photo::paginate();
+        $photos = Photo::orderBy('created_at', 'DESC')->paginate();
 
         return view('admin.photos.index', ['photos' => $photos]);
     }

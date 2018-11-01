@@ -3,12 +3,12 @@
 @section('content')
 
     <div class="container">
-        <h2>Photos</h2>
+        <h2>Photos: {{ $photos->total() }}</h2>
 
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th class="text-center" scope="col">Pic</th>
+                    <th class="text-center" scope="col">Thumbnail</th>
                     <th class="text-left" scope="col">Name</th>
                     <th class="text-lef" scope="col">Date</th>
                     <th class="text-right" scope="col">Actions</th>
