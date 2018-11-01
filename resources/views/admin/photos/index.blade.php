@@ -17,7 +17,7 @@
             <tbody>
                 @foreach($photos as $photo)
                 <tr>
-                    <td class="text-center"> <a href="{!! $photo->path !!}">{!! $photo->pic(50) !!}</a> </td>
+                    <td class="text-center"> <a href="{!! $photo->path !!}">{!! $photo->pic(200) !!}</a> </td>
                     <td class="text-left">
                         {{ $photo->name }}
                     </td>
