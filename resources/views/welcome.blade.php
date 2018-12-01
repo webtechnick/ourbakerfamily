@@ -25,12 +25,7 @@
                                 </div>
                             @endforeach
 
-                            <div class="container">
-                                <div class="row center mt20">
-                                    {{ $photos->links() }}
-                                </div>
-                            </div>
-
+                            {{ $photos->links() }}
                         @endif
                     </div>
                 </div>

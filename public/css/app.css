@@ -11209,3 +11209,9 @@ a.text-dark:focus {
   text-align: center;
 }
 
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
