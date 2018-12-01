@@ -7,7 +7,7 @@
             <a name="photos"></a>
             <div class="col-md-12">
                 <div class="card" id="Photos">
-                    <div class="card-header">Photos</div>
+                    <div class="card-header">Gallery</div>
                     <div class="card-body">
                         @if ($photos->isEmpty())
                             No approved photos.

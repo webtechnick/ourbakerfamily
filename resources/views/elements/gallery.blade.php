@@ -1,7 +1,7 @@
 <a name="gallery"></a>
 <div class="col-md-6">
     <div class="card" id="Gallery">
-        <div class="card-header">Photo Upload</div>
+        <div class="card-header">Upload</div>
         <div class="card-body">
             <photo-upload action="/photos/store"></photo-upload>
         </div>
