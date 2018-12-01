@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Photo;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -13,6 +14,9 @@ class PagesController extends Controller
      */
     public function welcome()
     {
-        return view('welcome');
+        $photos = Photo::active()
+                       ->orderBy('created_at', 'DESC')
+                       ->paginate(20);
+        return view('welcome', compact('photos'));
     }
 }

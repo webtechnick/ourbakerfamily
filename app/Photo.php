@@ -6,10 +6,12 @@ use App\Events\PhotoDeleting;
 use App\Traits\Models\Thumbnailable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
+use WebTechNick\LaravelGlow\Traits\ToggleActivatable;
 
 class Photo extends Model
 {
-    use Thumbnailable;
+    use Thumbnailable,
+        ToggleActivatable;
 
     protected $fillable = [
         'title',
@@ -84,8 +86,8 @@ class Photo extends Model
     public function pic($size = 200, $class = '')
     {
         if ($size == 'full') {
-            return '<img src="'. $this->path .'" class="img-rounded img-responsive center '. $class .'">';
+            return '<img src="'. $this->path .'" class="img-rounded rounded img-responsive center '. $class .'">';
         }
-        return '<img src="'. $this->thumbnail($size) .'" width="'.$size.'" style="width: '. $size .'px;" class="img-rounded img-responsive center '. $class .'">';
+        return '<img src="'. $this->thumbnail($size) .'" width="'.$size.'" style="width: '. $size .'px;" class="rounded img-thumbnail img-responsive center '. $class .'">';
     }
 }

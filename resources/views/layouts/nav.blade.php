@@ -11,7 +11,10 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#gallery" onclick="$('#Gallery').animateCss('rubberBand')">Gallery</a>
+                    <a class="nav-link" href="/#photos" onclick="$('#Photos').animateCss('rubberBand')">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#gallery" onclick="$('#Gallery').animateCss('rubberBand')">Upload</a>
                 </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="/#rsvp" onclick="$('#RSVP').animateCss('rubberBand')">RSVP</a>

@@ -4,9 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\ServiceProvider;
-use Jenssegers\Agent\Facades\Agent;
 
 class BladeServiceProvider extends ServiceProvider
 {
