@@ -25,7 +25,9 @@
                                 </div>
                             @endforeach
 
-                            {{ $photos->links() }}
+                            <div class="mt20">
+                                {{ $photos->links() }}
+                            </div>
                         @endif
                     </div>
                 </div>
