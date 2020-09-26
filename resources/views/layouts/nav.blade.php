@@ -20,7 +20,7 @@
                     <a class="nav-link" href="/gallery#photos" onclick="$('#Photos').animateCss('rubberBand')">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/gallery#upload" onclick="$('#Gallery').animateCss('rubberBand')">Upload</a>
+                    <a class="nav-link" href="/gallery#upload" onclick="$('#Upload').animateCss('rubberBand')">Upload</a>
                 </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="/#rsvp" onclick="$('#RSVP').animateCss('rubberBand')">RSVP</a>
