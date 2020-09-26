@@ -45,7 +45,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             @if (Auth::check() && Auth::user()->isAdmin())
-                                <a class="dropdown-link" href="/admin">Admin</a>
+                                <a class="dropdown-item" href="/admin">Admin</a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
