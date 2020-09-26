@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', 'PagesController@welcome')->name('home');
+Route::get('/', 'PagesController@shower')->name('home');
+Route::get('/gallery', 'PagesController@gallery')->name('gallery');
 
 Route::get('/account', 'UsersController@index')->name('account');
 

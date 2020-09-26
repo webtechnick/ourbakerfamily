@@ -11,17 +11,20 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#photos" onclick="$('#Photos').animateCss('rubberBand')">Gallery</a>
+                    <a class="nav-link" href="/#shower" onclick="$('#Shower').animateCss('rubberBand')">Baby Shower</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#gallery" onclick="$('#Gallery').animateCss('rubberBand')">Upload</a>
+                    <a class="nav-link" href="/#registry" onclick="$('#Registry').animateCss('rubberBand')">Gift Registry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery#photos" onclick="$('#Photos').animateCss('rubberBand')">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery#upload" onclick="$('#Gallery').animateCss('rubberBand')">Upload</a>
                 </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="/#rsvp" onclick="$('#RSVP').animateCss('rubberBand')">RSVP</a>
                 </li> --}}
-                <li class="nav-item">
-                    <a class="nav-link" href="/#registry" onclick="$('#Registry').animateCss('rubberBand')">Gift Registry</a>
-                </li>
                 @if (Auth::check() && Auth::user()->isAdmin())
                     <li class="nav-item">
                         <a class="nav-link" href="/admin">Admin</a>
