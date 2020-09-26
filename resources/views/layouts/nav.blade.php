@@ -25,11 +25,6 @@
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="/#rsvp" onclick="$('#RSVP').animateCss('rubberBand')">RSVP</a>
                 </li> --}}
-                @if (Auth::check() && Auth::user()->isAdmin())
-                    <li class="nav-item">
-                        <a class="nav-link" href="/admin">Admin</a>
-                    </li>
-                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -49,6 +44,9 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            @if (Auth::check() && Auth::user()->isAdmin())
+                                <a class="dropdown-link" href="/admin">Admin</a>
+                            @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
