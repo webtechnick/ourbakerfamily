@@ -13,7 +13,7 @@
                         <p>Time: Oct 25th, 2020 3:30 PM Mountain Time (US and Canada)</p>
                         <p>Password: <em>Provided to you in invitation</em></p>
 
-                        <a href="https://lacallegroup.zoom.us/j/96823521423?pwd=VEI2bHlVU0FaUVVLR1kyUFFYbFJDQT09" class="btn btn-lg btn-primary btn-block mt40"><i class="fa fa-fw fa-video mr10"></i> Join Baby Shower</a>
+                        <a href="https://lacallegroup.zoom.us/j/96823521423?pwd=QS80d2dHeEVZN1BCL2hEVGFidURVQT09" class="btn btn-lg btn-primary btn-block mt40"><i class="fa fa-fw fa-video mr10"></i> Join Baby Shower</a>
                     </div>
                 </div>
             </div>
