@@ -22,7 +22,7 @@
     "dependencies": {
         "animate.css": "^3.7.0",
         "collect.js": "^4.0.27",
-        "node-sass": "4.13",
+        "node-sass": "7.0",
         "css-loader": "^1.0.0",
         "dropzone": "^5.5.1",
         "lightbox2": "^2.10.0",
